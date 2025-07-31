@@ -75,7 +75,7 @@ const Blog = () => {
         <div className="blog-card sec1s-box1s ">
           <div className="mb-[20px]">
             <Image
-              src="/assets/p5.png"
+              src="/assets/blog.png"
               alt=""
               width={200}
               height={150}
@@ -117,7 +117,7 @@ const Blog = () => {
         <div className="blog-card sec1s-box1s ">
           <div className="mb-[20px]">
             <Image
-              src="/assets/p5.png"
+              src="/assets/blog1.png"
               alt=""
               width={200}
               height={150}
@@ -170,7 +170,7 @@ const Blog = () => {
         <div className="blog-card sec1s-box1s ">
           <div className="mb-[20px]">
             <Image
-              src="/assets/p5.png"
+              src="/assets/blog2.png"
               width={200}
               height={150}
               alt=""
@@ -220,7 +220,7 @@ const Blog = () => {
         <div className="blog-card sec1s-box1s ">
           <div className="mb-[20px]">
             <Image
-              src="/assets/p5.png"
+              src="/assets/blog.png"
               width={200}
               height={150}
               alt=""
