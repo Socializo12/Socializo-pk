@@ -110,12 +110,12 @@ const BlogPost = () => {
                   </h1>
                 ),
                 h2: ({ children }) => (
-                  <h2 className="mt-[40px] mb-[15px] font-bold text-2xl text-white">
+                  <h2 className="mt-[40px] mb-[15px] font-bold text-2xl ">
                     {children}
                   </h2>
                 ),
                 h3: ({ children }) => (
-                  <h3 className="text-[17px] font-semibold text-white mt-6 mb-3">
+                  <h3 className="text-[17px] font-semibold  mt-6 mb-3">
                     {children}
                   </h3>
                 ),
@@ -125,7 +125,7 @@ const BlogPost = () => {
                   </p>
                 ),
                 strong: ({ children }) => (
-                  <strong className="font-bold text-white">{children}</strong>
+                  <strong className="font-bold ">{children}</strong>
                 ),
                 ol: ({ children }) => (
                   <ol className="px-[12px] pb-[10px] list-decimal list-inside space-y-2">

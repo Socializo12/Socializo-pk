@@ -191,7 +191,7 @@
 }
 
 .markdown-content h2 {
-  position: relative;
+  /* position: relative; */
   padding-left: 20px;
 }
 

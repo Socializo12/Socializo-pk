@@ -166,8 +166,8 @@ const ContactForm = () => {
 
       <div className="max-w-4xl mx-auto px-4 py-20">
         <div className="text-center mb-12">
-          <div className="sec1-h4 inline-block mb-6">
-            <h4>Get In Touch</h4>
+          <div className="sec1-h1 sec1-h4 inline-block mb-6">
+            <h4 className="gradient-text">Get In Touch</h4>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold my-[10px]">Ready to Transform Your Lead Generation?</h2>
           <p className="text-xl text-gray-300 max-w-[660px] mt-[10px] mb-[40px] mx-auto">

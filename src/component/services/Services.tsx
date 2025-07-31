@@ -39,7 +39,7 @@ const Section1 = () => {
          <section className="main-container">
         <div className="min-h-screen bg-black text-white flex flex-col">
         <div className="sec1-h4 mb-[50px] mx-auto w-[max-content]">
-          <h4>What We Do</h4>
+          <h4 className="gradient-text">What We Do</h4>
         </div>
         <main className="">
           <div className="main-container-grid mx-auto gap-[20px] p-8 md:p-12">
@@ -332,7 +332,7 @@ const Section1 = () => {
             <div className="morph"></div>
           </div>
           <div className="sec1-h4">
-            <h4>Meet The Founder</h4>
+            <h4 className="gradient-text">Meet The Founder</h4>
           </div>
           <div className="section3-box-inner">
             <div className="tex-left md:text-center">
@@ -345,8 +345,8 @@ const Section1 = () => {
             </div>
 
             <div className="flex items-center gap-[16px] flex-wrap justify-center w-full">
-              <Image src="/assets/p5.png"
-                className="rounded-full object-cover"
+              <Image src="/assets/i1.jpg"
+                className="rounded-full object-fit"
                 alt="Abdul Samad - CEO"
                 width={85} height={85}
               />
@@ -374,8 +374,7 @@ const Section1 = () => {
                 </svg>
               </a>
             </div>
-
-            <div className="video mt-8">
+            {/* <div className="video mt-8">
               <div className="relative w-full max-w-lg mx-auto">
                 <iframe
                   className="w-full h-64 rounded-xl shadow-2xl"
@@ -387,7 +386,7 @@ const Section1 = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="w-full flex flex-wrap justify-center items-center gap-[25px] mt-12">
@@ -492,7 +491,7 @@ const Section1 = () => {
           </div>
 
           <div className="sec1-h4 my-[20px] w-[max-content] mx-[auto]">
-            <h4>Comparison</h4>
+            <h4 className="gradient-text">Comparison</h4>
           </div>
 
           <div className="text-center mt-[30px] mb-[50px]">

@@ -909,19 +909,25 @@ body {
 
 .sec1-h4 {
   border-radius: 30px;
-  border: 2px solid var(--primary-blue);
-  background: linear-gradient(45deg, rgba(41, 52, 255, 0.8), rgba(138, 165, 255, 0.6));
+  border: 2px solid var( --text-gray);
+  /* background: linear-gradient(45deg, rgba(41, 52, 255, 0.8), rgba(138, 165, 255, 0.6)); */
   padding: clamp(15px, 3vw, 25px) clamp(30px, 6vw, 60px);
-  font-size: clamp(1.125rem, 3vw, 1.5rem);
-  font-weight: 600;
-  color: white;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: bold;
+  font-style: italic !important;
   position: relative;
+  /* color:  linear-gradient(45deg, rgba(41, 52, 255, 0.8), rgba(138, 165, 255, 0.6)) !important;  */
   overflow: hidden;
   animation: bounceIn 1s ease-out;
   text-align: center;
 }
+.gradient-text {
+  background: linear-gradient(45deg, rgba(78, 86, 236, 0.9), rgba(138, 165, 255, 0.6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;}
 
-.sec1-h4::before {
+.sec1-h4 ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1373,7 +1379,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  margin-top: 60px;
   padding: 50px 30px;
   background: linear-gradient(135deg, rgba(18, 20, 38, 0.6), rgba(0, 0, 0, 0.8));
   border-radius: 25px;
@@ -1528,7 +1533,7 @@ body {
   align-items: center;
   max-width: 750px;
   margin: 0px auto 0;
-  padding: 60px 20px;
+  padding: 10px 20px;
 }
 
 .socail-container {
@@ -1796,7 +1801,7 @@ body {
 
   .section4-box {
     padding: 40px 20px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 

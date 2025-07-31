@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
- 
+
 import "@/component/style.css";
 
 const faqQuestions = [
@@ -83,10 +83,179 @@ const Section4 = () => {
       </div>
 
       <div className="section4-inner">
-        <div className="sec1-h4">
-          <h4>Frequently Asked Questions</h4>
-        </div>
+        {/* NEw Code */}
+          {/* Enhanced CTA Section */}
+          <div className="section4-box">
+            <div className="sec1-h4 w-[max-content]">
+              <span className="text-lg text-blue-300 gradient-text">Limited Time Offer</span>
+            </div>
+            <div className="section4-box-content">
+              <div className="text-center mb-8">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
 
+                <h2 className="mb-6 sm:px[10px]">
+                  Book Your 25-Minute Growth Strategy Call with Abdul Samad
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-8">
+                  <div className="text-center my-[10px]">
+                    <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
+                      <svg
+                        className="w-[30px]  h-[30px] text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+
+                      <h3 className="font-semibold mb-2">
+                        Free Strategy Session
+                      </h3>
+                    </div>
+                    <p className="text-sm text-gray-400 px-[10px]">
+                      No sales pitch, just actionable insights for your business
+                    </p>
+                  </div>
+
+                  <div className="text-center my-[10px]">
+                    <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
+                      <svg
+                        className="w-[30px]  h-[30px] text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      </svg>
+                      <h3 className="font-semibold mb-2">Custom Game Plan</h3>{" "}
+                    </div>
+                    <p className="text-sm text-gray-400">
+                      Tailored strategy for your specific industry and goals
+                    </p>
+                  </div>
+
+                  <div className="text-center my-[10px]">
+                    <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
+                      <svg
+                        className="w-[30px]  h-[30px] text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
+                        />
+                      </svg>
+
+                      <h3 className="font-semibold mb-2">ROI Projection</h3>
+                    </div>
+                    <p className="text-sm text-gray-400 px-[10px]">
+                      See exactly how much revenue you could generate
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center my-[30px]">
+                <button className="group relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                  <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg">
+                    Book My Strategy Call Now
+                  </div>
+                </button>
+
+                <div className="my-[25px] flex items-center justify-center  text-sm text-gray-400">
+                  <div className="flex items-center mx-[10px] ]">
+                    <svg
+                      className="w-[20px] h-[20px] text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="">100% Free</span>
+                  </div>
+                  <div className="flex items-center mx-[10px] ]">
+                    <svg
+                      className="w-[20px] h-[20px] text-green-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="">25 Minutes</span>
+                  </div>
+                  <div className="flex items-center mx-[10px] ]">
+                    <svg
+                      className="w-[20px] h-[20px] text-green-400 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span className="">No Commitment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Trust Indicators */}
+          <div className="mt-16 text-center">
+            <p className="text-gray-400 mb-[10px]">
+              Trusted by 500+ B2B Companies
+            </p>
+            <div className="flex flex-wrap  justify-center items-center gap-[16px]  opacity-60">
+              {/* <div className="w-px h-8 bg-gray-600  my-[10px]"> */}
+              <div className="text-2xl font-bold">
+                500+ <span className="px[2px]">Happy Clients</span>
+              </div>
+
+              {/* </div> */}
+              {/* <div className="w-px h-8 bg-gray-600  my-[10px]"> */}
+              <div className="text-2xl font-bold">
+                $50M+ <span className="px[2px]">Revenue Generated</span>
+              </div>
+              {/* <div className="text-sm"></div> */}
+              {/* </div> */}
+              {/* <div className="w-px h-8 bg-gray-600 my-[10px]"> */}
+              <div className="text-2xl font-bold">
+                95% <span className="px[2px]">Client Satisfaction</span>
+              </div>
+              {/* <div className="text-sm"></div> */}
+              {/* </div> */}
+            </div>
+          </div>
+        {/* NEw Code */}
+
+        <div className="sec1-h4 mt-[30px] mb-[15px]">
+          <h4 className="gradient-text ">Frequently Asked Questions</h4>
+        </div>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-[10px]">
             Everything You Need to Know About Our AI Lead Generation System
@@ -118,170 +287,6 @@ const Section4 = () => {
               )}
             </div>
           ))}
-        </div>
-
-        {/* Enhanced CTA Section */}
-
-        <div className="section4-box">
-          <div className="sec1-h4 w-[max-content]">
-            <span className="text-lg text-blue-300">Limited Time Offer</span>
-          </div>
-          <div className="section4-box-content">
-            <div className="text-center mb-8">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-
-              <h2 className="mb-6 sm:px[10px]">
-                Book Your 25-Minute Growth Strategy Call with Taha
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px] mb-8">
-                <div className="text-center my-[10px]">
-                  <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
-                    <svg
-                      className="w-[30px]  h-[30px] text-blue-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-
-                    <h3 className="font-semibold mb-2">
-                      Free Strategy Session
-                    </h3>
-                  </div>
-                  <p className="text-sm text-gray-400 px-[10px]">
-                    No sales pitch, just actionable insights for your business
-                  </p>
-                </div>
-
-                <div className="text-center my-[10px]">
-                  <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
-                    <svg
-                      className="w-[30px]  h-[30px] text-blue-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                    <h3 className="font-semibold mb-2">Custom Game Plan</h3>{" "}
-                  </div>
-                  <p className="text-sm text-gray-400">
-                    Tailored strategy for your specific industry and goals
-                  </p>
-                </div>
-
-                <div className="text-center my-[10px]">
-                  <div className="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-[6px] gap-[10px]">
-                    <svg
-                      className="w-[30px]  h-[30px] text-blue-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
-                      />
-                    </svg>
-
-                    <h3 className="font-semibold mb-2">ROI Projection</h3>
-                  </div>
-                  <p className="text-sm text-gray-400 px-[10px]">
-                    See exactly how much revenue you could generate
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center my-[30px]">
-              <button className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
-                <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg">
-                  Book My Strategy Call Now
-                </div>
-              </button>
-
-              <div className="my-[25px] flex items-center justify-center  text-sm text-gray-400">
-                <div className="flex items-center mx-[10px] ]">
-                  <svg
-                    className="w-[20px] h-[20px] text-green-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="">100% Free</span>
-                </div>
-                <div className="flex items-center mx-[10px] ]">
-                  <svg
-                    className="w-[20px] h-[20px] text-green-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="">25 Minutes</span>
-                </div>
-                <div className="flex items-center mx-[10px] ]">
-                  <svg
-                    className="w-[20px] h-[20px] text-green-400 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="">No Commitment</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-400 mb-[10px]">
-            Trusted by 500+ B2B Companies
-          </p>
-          <div className="flex flex-wrap  justify-center items-center gap-[16px]  opacity-60">
-            {/* <div className="w-px h-8 bg-gray-600  my-[10px]"> */}
-              <div className="text-2xl font-bold">500+ <span className="px[2px]">Happy Clients</span></div>
-             
-            {/* </div> */}
-            {/* <div className="w-px h-8 bg-gray-600  my-[10px]"> */}
-              <div className="text-2xl font-bold">$50M+ <span className="px[2px]">Revenue Generated</span></div>
-              {/* <div className="text-sm"></div> */}
-            {/* </div> */}
-            {/* <div className="w-px h-8 bg-gray-600 my-[10px]"> */}
-              <div className="text-2xl font-bold">95% <span className="px[2px]">Client Satisfaction</span></div>
-              {/* <div className="text-sm"></div> */}
-            {/* </div> */}
-          </div>
         </div>
       </div>
     </section>

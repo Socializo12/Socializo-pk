@@ -37,8 +37,8 @@ const Blog = () => {
         <div className="sparkle"></div>
       </div>
       <div className="container-Blog">
-        <div className="sec1-h4 mb-[50px] mx-auto w-[min-content]">
-          <h4>Blog</h4>
+        <div className="sec1-h1 mb-[50px] mx-auto w-[min-content]">
+          <h1>Blog</h1>
         </div>
         {/* Content 1 */}
         <div className="content-blog1 ">
@@ -93,10 +93,10 @@ const Blog = () => {
                 Your Mind)
               </h3>
             </div>
-            <div className="flex  justify-between items-center mt-[30px] w-full">
+            {/* <div className="flex  justify-between items-center mt-[30px] w-full">
               <div className="blog-iconImg flex justify-between items-center gap-[10px]">
                 <div className="">
-                  <Image src="/assets/i1.png" alt="" width={45} height={45} />
+                  <Image src="/assets/i1.jpg" alt="" width={45} height={45} className="object-[contain]" />
                 </div>
                 <div className="">
                   <h4>Spencer Sharp </h4>
@@ -105,7 +105,7 @@ const Blog = () => {
               <div className="flex justify-end items-center ">
                 <div className="">20-04-2025</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Link>
         {/* Two */}
@@ -128,11 +128,11 @@ const Blog = () => {
               </h3>
             </div>
             {/* 2 */}
-            <div className="flex  justify-between items-center mt-[30px] w-full">
+            {/* <div className="flex  justify-between items-center mt-[30px] w-full">
               <div className="blog-iconImg flex justify-between items-center gap-[10px]">
                 <div className="">
                   <Image
-                    src="/assets/i1.png"
+                    src="/assets/i1.jpg"
                     width={200}
                     height={150}
                     alt=""
@@ -148,7 +148,7 @@ const Blog = () => {
               <div className="flex justify-end items-center ">
                 <div className="">20-04-2026</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Link>
 
@@ -171,11 +171,11 @@ const Blog = () => {
               </h3>
             </div>
             {/* 2 */}
-            <div className="flex  justify-between items-center mt-[30px] w-full">
+            {/* <div className="flex  justify-between items-center mt-[30px] w-full">
               <div className="blog-iconImg flex justify-between items-center gap-[10px]">
                 <div className="">
                   <Image
-                    src="/assets/i1.png"
+                    src="/assets/i1.jpg"
                     alt=""
                     width={200}
                     height={150}
@@ -189,7 +189,7 @@ const Blog = () => {
               <div className="flex justify-end items-center ">
                 <div className="">20-04-2025</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Link>
         {/* for */}
@@ -211,10 +211,10 @@ const Blog = () => {
               </h3>
             </div>
             {/* 2 */}
-            <div className="flex flex-wrap justify-between items-center  gap-[15px] mt-[30px] w-full">
+            {/* <div className="flex flex-wrap justify-between items-center  gap-[15px] mt-[30px] w-full">
               <div className="blog-iconImg flex justify-between items-center gap-[10px]">
                 <Image
-                  src="/assets/i1.png"
+                  src="/assets/i1.jpg"
                   alt=""
                   width={200}
                   height={150}
@@ -226,7 +226,7 @@ const Blog = () => {
               <div className="flex md:justify-end justify-center items-center ">
                 20-04-2025
               </div>
-            </div>
+            </div> */}
           </div>
         </Link>
       </div>

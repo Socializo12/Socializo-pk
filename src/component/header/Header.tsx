@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import "@/component/style.css"; // apka custom css
@@ -84,7 +83,7 @@ const Header = () => {
       <nav className={`sticky-navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-container">
           <div className="navbar-logo">
-            <Link href="#home">
+            <Link href="/">
             <Image src="/assets/logo1.png" alt="Logo" width={280} height={90} />
             </Link>
           </div>
@@ -96,7 +95,7 @@ const Header = () => {
               <li><NavLink href="services" label="Services" /></li>
               <li><NavLink href="faq" label="FAQ" /></li>
              <li><Link href="/blog" className="text-[white]" >Blog</Link></li>
-              <li><NavLink href="about" label="About" /></li>
+              {/* <li><NavLink href="about" label="About" /></li> */}
               <li><NavLink href="contact" label="Contact" /></li>
             </ul>
             <button className="cta-button">Lets Talk</button>
@@ -114,7 +113,7 @@ const Header = () => {
             <li><NavLink href="services" label="Services" /></li>
             <li><NavLink href="faq" label="FAQ" /></li>
             <li><NavLink href="/blog" label="Blog" /></li>
-            <li><NavLink href="about" label="About" /></li>
+            {/* <li><NavLink href="about" label="About" /></li> */}
             <li><NavLink href="contact" label="Contact" /></li>
           </ul>
           <button className="mobile-cta-button mt-4" onClick={toggleMenu}>
@@ -134,7 +133,7 @@ const Header = () => {
                   <p className="text-[20px]">Lead-Gen Automation</p>
                 </div>
                 <div className="my-[10px] ">
-                  <h3 className="text-[62px] font-bold leading-[1.1] hero-title">
+                  <h3 className="text-[62px] font-bold leading-[1.1] hero-title gradient-text ">
                     We Build Growth Systems for B2B Companies
                   </h3>
                 </div>

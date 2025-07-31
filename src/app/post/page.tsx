@@ -135,7 +135,7 @@ const BlogPost = () => {
                   </h1>
                 ),
                 h2: ({ children }) => (
-                  <h2 className="mt-[40px] mb-[15px] font-bold text-2xl text-white">
+                  <h2 className="mt-[40px] mb-[15px] font-bold text-2xl ">
                     {children}
                   </h2>
                 ),
