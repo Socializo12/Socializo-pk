@@ -1,0 +1,48 @@
+
+
+/* Keyframe for a simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframe for a slide-in from bottom animation */
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px below its final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at its final position */
+  }
+}
+
+/* Example usage of animations */
+
+/* Apply fade-in to the main content */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Apply slide-in to specific elements, with a delay for staggered effect */
+.animate-slide-in-1 {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.2s; /* Delay for the first element */
+}
+
+.animate-slide-in-2 {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.4s; /* Delay for the second element */
+}
+
+.animate-slide-in-3 {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+  animation-delay: 0.6s; /* Delay for the third element */
+}
+
+/* You can add more specific classes for different delays or types of animations */
