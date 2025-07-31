@@ -648,11 +648,10 @@ body {
 }
 
 .mobile-cta-button {
-  width: 100%;
   background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
   color: white;
   border: none;
-  padding: 18px;
+  padding: 20px 55px;
   border-radius: 12px;
   font-weight: 600;
   font-size: 16px;
@@ -1718,11 +1717,13 @@ body {
   .section4-box4 {
     max-width: 100%;
   }
+  .mobile-cta-button {
+  padding: 20px 35px;
+}
 }
 
 /* Mobile Large */
-@media (max-width: 768px) {
-  
+@media (max-width: 768px) { 
 .main-container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(98%, 1fr));
@@ -1863,6 +1864,9 @@ body {
     padding: 50px 15px;
     gap: 35px;
   }
+   .mobile-cta-button {
+  padding: 20px 15px;
+}
 
 }
 
