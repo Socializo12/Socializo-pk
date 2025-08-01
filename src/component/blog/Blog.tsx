@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <section className="section4-container4 "  id="blog">
+    <section className="section4-container4 " >
       {/* Enhanced Background Effects */}
       <div className="floating-shapes">
         <div className="shape"></div>
@@ -36,7 +36,7 @@ const Blog = () => {
         <div className="sparkle"></div>
         <div className="sparkle"></div>
       </div>
-      <div className="container-Blog">
+      <div className="container-Blog"  id="blog">
         <div className="sec1-h1 text-gradient mb-[50px] mx-auto w-[min-content]">
           <h4>Blog</h4>
         </div>
