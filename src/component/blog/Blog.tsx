@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <section className="section4-container4 ">
+    <section className="section4-container4 "  id="blog">
       {/* Enhanced Background Effects */}
       <div className="floating-shapes">
         <div className="shape"></div>
@@ -37,40 +37,11 @@ const Blog = () => {
         <div className="sparkle"></div>
       </div>
       <div className="container-Blog">
-        <div className="sec1-h1 mb-[50px] mx-auto w-[min-content]">
-          <h1>Blog</h1>
+        <div className="sec1-h1 text-gradient mb-[50px] mx-auto w-[min-content]">
+          <h4>Blog</h4>
         </div>
         {/* Content 1 */}
-        <div className="content-blog1 ">
-          <div className="sec1-box1 my-[20px]">
-            <div className="sec1s-box1s ">
-              <div className="text-side content-blog1-text">
-                <h2 className="text-left md:text-center">
-                  #1 Texas Lead Generation Company
-                </h2>
-                <p className="text-left mt-[10px] md:text-center">
-                  Ranked Top 3% of Lead Generation Companies in Texas | Proven
-                  Facebook & Social Media Strategies That Deliver Qualified
-                  Local Lead
-                </p>
-                <div className="w-max  flex flex-wrap items-center gap-[15px]">
-                  <div className="">
-                    <button className="mobile-cta-button  mt-[20px] ">
-                    Get a Free Quote
-                  </button>
-                    </div>
-                   <div className="">
-                    <button className="mobile-cta-button mt-[20px] ">
-                    Call Now
-                  </button>
-                    
-                    </div>
-                </div>
-              </div>
-              <div className="content-blog1-imgBg"></div>
-            </div>
-          </div>
-        </div>
+        
         {/* Content 2 */}
       </div>
       {/* Content 3 */}

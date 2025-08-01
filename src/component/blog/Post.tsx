@@ -232,7 +232,7 @@ const Post = () => {
         </div>
         {/* Second Part  */}
         <div className="px-[20px] mb-[20px]">
-          <Link href="" >
+          <Link href="/post" >
             <strong className="flex items-center gap-[5px]">
               <ArrowLeftIcon className="h-[15px] w-[25px] text-[white]" />{" "}
               <span className="text-[white]">Previous</span>

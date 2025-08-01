@@ -4,12 +4,12 @@ import { Menu, X } from "lucide-react";
 import "@/component/style.css"; // apka custom css
 // import TextEffect from "./TextEffect";
 import Image from "next/image"
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import Link from "next/link";
 
-const TextEffect = dynamic(() => import('@/component/slider/TextEffect'), {
-  ssr: false, // <-- disables server-side render for just this component
-})
+// const TextEffect = dynamic(() => import('@/component/slider/TextEffect'), {
+//   ssr: false, // <-- disables server-side render for just this component
+// })
 const sections = ["home", "services", "faq","blog","about", "contact"];
 
 const Header = () => {
@@ -54,6 +54,15 @@ const Header = () => {
       {label}
     </a>
   );
+  const PageLink = ({ href, label }: { href: string; label: string }) => (
+    <a href={`/${href}`}
+      className={`${
+        activeSection === href ? "text-blue-500 font-bold underline" : "text-black"
+      } transition duration-200`}
+      onClick={() => setIsMenuOpen(false)} >
+      {label}
+    </a>
+  );
 
   return (
     <div className="container " id="home">
@@ -91,10 +100,10 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="desktop-menu">
             <ul className="nav-links flex gap-6">
-              <li><NavLink href="home" label="Home" /></li>
+              <li><Link href="/" className="text-[white]" >Home</Link></li>
               <li><NavLink href="services" label="Services" /></li>
               <li><NavLink href="faq" label="FAQ" /></li>
-             <li><Link href="/blog" className="text-[white]" >Blog</Link></li>
+             <li><Link href="blog" className="text-[white]" >Blog</Link></li>
               {/* <li><NavLink href="about" label="About" /></li> */}
               <li><NavLink href="contact" label="Contact" /></li>
             </ul>
@@ -109,10 +118,10 @@ const Header = () => {
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <ul className="mobile-nav-links flex flex-col gap-4">
-            <li><NavLink href="home" label="Home" /></li>
+            <li><Link href="/" className="text-[white]" >Home</Link></li>
             <li><NavLink href="services" label="Services" /></li>
             <li><NavLink href="faq" label="FAQ" /></li>
-            <li><NavLink href="/blog" label="Blog" /></li>
+            <li><NavLink href="blog" label="Blog" /></li>
             {/* <li><NavLink href="about" label="About" /></li> */}
             <li><NavLink href="contact" label="Contact" /></li>
           </ul>
@@ -121,75 +130,7 @@ const Header = () => {
           </button>
         </div>
       </nav>
-       {/* Hero Section */}
-        <div className="hero-main">
-          <div className="hero-sec">
-            <div className="hero-content">
-              <div className="flex flex-col justify-center items-center">
-                <div
-                  className="w-[300px] my-[15px] rounded-[15px] border-2 p-[10px] text-medium border-white font-bold"
-                  style={{ padding: "5px" }}
-                >
-                  <p className="text-[20px]">Lead-Gen Automation</p>
-                </div>
-                <div className="my-[10px] ">
-                  <h3 className="text-[62px] font-bold leading-[1.1] hero-title gradient-text ">
-                    We Build Growth Systems for B2B Companies
-                  </h3>
-                </div>
-                <div className="my-[10px] ">
-                  <p className="px-[40px] text-[20px] leading-[1.4] hero-subtitle">
-                    Our done-for-you system hunts, nurtures, and closes cold prospects—so you land new clients in just
-                    60 days
-                  </p>
-                </div>
-                <div className="my-[10px] ">
-                  <button className="hero-cta-btn">Show Me How to Get 50 Leads</button>
-                </div>
-                <div className="flex items-center gap-6 text-sm text-gray-800 my-[20px] ">
-                  <svg
-                    className="w-8 h-8 text-[#91ff91] border-2 rounded-[15px] mx-[10px] border-green-600 gap-6 dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 11.917 9.724 16.5 19 7.5"
-                    />
-                  </svg>
-                  <span className="ps-4">Land Clients or Your Money Back Guarantee</span>
-                </div>
-                <div className="w-full px-4 md:px-8 mt-4 text-center">
-                  <TextEffect/>
-                  </div>
-              </div>
-            </div>
-     
-              
-        
-            <div className="my-[20px] flex flex-row justify-around items-center partner-logos">
-              <div>
-                <Image src="/assets/image1.png" alt="Partner 1" width={160} height={80} />
-              </div>
-              <div>
-                <Image src="/assets/image2.png" alt="Partner 2" width={160} height={80} />
-              </div>
-              <div>
-                <Image src="/assets/image3.png" alt="Partner 3" width={160} height={80} />
-              </div>
-              <div>
-                <Image src="/assets/image4.png" alt="Partner 4" width={160} height={80} />
-              </div>
-            </div>
-          </div>
-        </div>
+    
     </div>
   );
 };

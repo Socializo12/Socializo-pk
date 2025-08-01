@@ -1,15 +1,18 @@
 "use client";
- 
+
 import "@/component/style.css";
 import { CheckIcon } from "@heroicons/react/24/solid";
-import Image from "next/image"
+import Image from "next/image";
 // import Link from "next/link";
+import dynamic from "next/dynamic";
 import { CheckCircle2 } from "lucide-react"; // Importing the checkmark icon
-
+const TextEffect = dynamic(() => import("@/component/slider/TextEffect"), {
+  ssr: false, // <-- disables server-side render for just this component
+});
 const Section1 = () => {
   return (
     <>
-      <section id="services">
+      <section>
         {/* <section className="section1-container "> */}
         {/* Enhanced Floating Shapes */}
         <div className="floating-shapes">
@@ -35,232 +38,328 @@ const Section1 = () => {
           <div className="sparkle"></div>
           <div className="sparkle"></div>
         </div>
-        {/* content 1 */}
-         <section className="main-container">
-        <div className="min-h-screen bg-black text-white flex flex-col">
-        <div className="sec1-h4 mb-[50px] mx-auto w-[max-content]">
-          <h4 className="gradient-text">What We Do</h4>
-        </div>
-        <main className="">
-          <div className="main-container-grid mx-auto gap-[20px] p-8 md:p-12">
-            <div className="text-center f-email content-box">
-              <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                Agentic AI
-              </h2>
-              <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
-                Helping the business world figure out and implement AI agents to
-                reduce costs and remove errors.
-              </p>
-
-              <div className="text-left w-full px-4 md:px-0 my-[10px]">
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  Agents & Automations
-                </h2>
-                <ul className="space-y-4 mb-[12px]">
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Vertical agents fine-tuned to specific domains and
-                      workflows.
-                    </p>
-                  </li>
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Strict compliance with regulations like HIPAA & GDPR.
-                    </p>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  LLM Quality Gap
-                </h2>
-                <ul className="space-y-4 mb-12">
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Evaluation and improvement of the quality of LLM
-                      applications.
-                    </p>
-                  </li>
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Usage of LLM Sanity Framework we have developed in-house.
-                    </p>
-                  </li>
-                </ul>
+        {/* Hero Section */}
+        <div className="hero-main" >
+          <div className="hero-sec">
+            <div className="hero-content">
+              <div className="flex flex-col justify-center items-center">
+                <div
+                  className="w-[300px] my-[15px] rounded-[15px] border-2 p-[10px] text-medium border-white font-bold"
+                  style={{ padding: "5px" }}
+                >
+                  <p className="text-[20px]">Lead-Gen Automation</p>
+                </div>
+                <div className="my-[10px] ">
+                  <h3 className="text-[62px] font-bold leading-[1.1] hero-title gradient-text ">
+                    We Build Growth Systems for B2B Companies
+                  </h3>
+                </div>
+                <div className="my-[10px] ">
+                  <p className="px-[40px] text-[20px] leading-[1.4] hero-subtitle">
+                    Our done-for-you system hunts, nurtures, and closes cold
+                    prospects—so you land new clients in just 60 days
+                  </p>
+                </div>
+                <div className="my-[10px] ">
+                  <button className="hero-cta-btn">
+                    Show Me How to Get 50 Leads
+                  </button>
+                </div>
+                <div className="flex items-center gap-6 text-sm text-gray-800 my-[20px] ">
+                  <svg
+                    className="w-8 h-8 text-[#91ff91] border-2 rounded-[15px] mx-[10px] border-green-600 gap-6 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 11.917 9.724 16.5 19 7.5"
+                    />
+                  </svg>
+                  <span className="ps-4">
+                    Land Clients or Your Money Back Guarantee
+                  </span>
+                </div>
+                <div className="w-full px-4 md:px-8 mt-4 text-center">
+                  <TextEffect />
+                </div>
               </div>
-
-              {/* <Button className="cta-button mt-8">
-                   Contact Us
-                 </Button> */}
             </div>
-            {/* Second */}
-            <div className="= text-center f-email content-box">
-              <h1 className="text-2xl md:text-3xl font-bold my-[20px]">
-                Agentic AI
-              </h1>
-              <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
-                Helping the business world figure out and implement AI agents to
-                reduce costs and remove errors.
-              </p>
 
-              <div className="text-left w-full px-4 md:px-0 my-[10px]">
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  Agents & Automations
-                </h2>
-                <ul className="space-y-4 mb-[12px]">
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Vertical agents fine-tuned to specific domains and
-                      workflows.
-                    </p>
-                  </li>
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Strict compliance with regulations like HIPAA & GDPR.
-                    </p>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  LLM Quality Gap
-                </h2>
-                <ul className="space-y-4 mb-12">
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Evaluation and improvement of the quality of LLM
-                      applications.
-                    </p>
-                  </li>
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Usage of LLM Sanity Framework we have developed in-house.
-                    </p>
-                  </li>
-                </ul>
+            <div className="my-[20px] flex flex-row justify-around items-center partner-logos">
+              <div>
+                <Image
+                  src="/assets/image1.png"
+                  alt="Partner 1"
+                  width={160}
+                  height={80}
+                />
               </div>
-
-              {/* <Button className="cta-button mt-8">
-                   Contact Us
-                 </Button> */}
-            </div>
-            {/* Two */}
-            <div className="= text-center f-email content-box">
-              <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                Agentic AI
-              </h2>
-              <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
-                Helping the business world figure out and implement AI agents to
-                reduce costs and remove errors.
-              </p>
-
-              <div className="text-left w-full px-4 md:px-0 my-[10px]">
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  Agents & Automations
-                </h2>
-                <ul className="space-y-4 mb-[12px]">
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Vertical agents fine-tuned to specific domains and
-                      workflows.
-                    </p>
-                  </li>
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Strict compliance with regulations like HIPAA & GDPR.
-                    </p>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  LLM Quality Gap
-                </h2>
-                <ul className="space-y-4 mb-12">
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Evaluation and improvement of the quality of LLM
-                      applications.
-                    </p>
-                  </li>
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Usage of LLM Sanity Framework we have developed in-house.
-                    </p>
-                  </li>
-                </ul>
+              <div>
+                <Image
+                  src="/assets/image2.png"
+                  alt="Partner 2"
+                  width={160}
+                  height={80}
+                />
               </div>
-
-              {/* <Button className="cta-button mt-8">
-                   Contact Us
-                 </Button> */}
-            </div>
-            {/* Second */}
-            <div className="= text-center f-email content-box">
-              <h1 className="text-2xl md:text-3xl font-bold my-[20px]">
-                Agentic AI
-              </h1>
-              <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
-                Helping the business world figure out and implement AI agents to
-                reduce costs and remove errors.
-              </p>
-
-              <div className="text-left w-full px-4 md:px-0 my-[10px]">
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  Agents & Automations
-                </h2>
-                <ul className="space-y-4 mb-[12px]">
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Vertical agents fine-tuned to specific domains and
-                      workflows.
-                    </p>
-                  </li>
-                  <li className="flex items-start my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Strict compliance with regulations like HIPAA & GDPR.
-                    </p>
-                  </li>
-                </ul>
-
-                <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
-                  LLM Quality Gap
-                </h2>
-                <ul className="space-y-4 mb-12">
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Evaluation and improvement of the quality of LLM
-                      applications.
-                    </p>
-                  </li>
-                  <li className="flex items-start  my-[10px] gap-[8px]">
-                    <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                    <p className="text-lg text-zinc-300">
-                      Usage of LLM Sanity Framework we have developed in-house.
-                    </p>
-                  </li>
-                </ul>
+              <div>
+                <Image
+                  src="/assets/image3.png"
+                  alt="Partner 3"
+                  width={160}
+                  height={80}
+                />
               </div>
-
-              {/* <Button className="cta-button mt-8">
-                   Contact Us
-                 </Button> */}
+              <div>
+                <Image
+                  src="/assets/image4.png"
+                  alt="Partner 4"
+                  width={160}
+                  height={80}
+                />
+              </div>
             </div>
           </div>
-        </main>
         </div>
+        {/* Hero Section end */}
+        {/* content 1 */}
+        <section className="main-container"  id="services">
+          <div className="min-h-screen bg-black text-white flex flex-col">
+            <div className="sec1-h4 mb-[50px] mx-auto w-[max-content]">
+              <h4 className="gradient-text">What We Do</h4>
+            </div>
+            <main className="">
+              <div className="main-container-grid mx-auto gap-[20px] p-8 md:p-12">
+                <div className="text-center f-email content-box">
+                  <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                    Agentic AI
+                  </h2>
+                  <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
+                    Helping the business world figure out and implement AI
+                    agents to reduce costs and remove errors.
+                  </p>
+
+                  <div className="text-left w-full px-4 md:px-0 my-[10px]">
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      Agents & Automations
+                    </h2>
+                    <ul className="space-y-4 mb-[12px]">
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Vertical agents fine-tuned to specific domains and
+                          workflows.
+                        </p>
+                      </li>
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Strict compliance with regulations like HIPAA & GDPR.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      LLM Quality Gap
+                    </h2>
+                    <ul className="space-y-4 mb-12">
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Evaluation and improvement of the quality of LLM
+                          applications.
+                        </p>
+                      </li>
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Usage of LLM Sanity Framework we have developed
+                          in-house.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* <Button className="cta-button mt-8">
+                   Contact Us
+                 </Button> */}
+                </div>
+                {/* Second */}
+                <div className="= text-center f-email content-box">
+                  <h1 className="text-2xl md:text-3xl font-bold my-[20px]">
+                    Agentic AI
+                  </h1>
+                  <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
+                    Helping the business world figure out and implement AI
+                    agents to reduce costs and remove errors.
+                  </p>
+
+                  <div className="text-left w-full px-4 md:px-0 my-[10px]">
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      Agents & Automations
+                    </h2>
+                    <ul className="space-y-4 mb-[12px]">
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Vertical agents fine-tuned to specific domains and
+                          workflows.
+                        </p>
+                      </li>
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Strict compliance with regulations like HIPAA & GDPR.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      LLM Quality Gap
+                    </h2>
+                    <ul className="space-y-4 mb-12">
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Evaluation and improvement of the quality of LLM
+                          applications.
+                        </p>
+                      </li>
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Usage of LLM Sanity Framework we have developed
+                          in-house.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* <Button className="cta-button mt-8">
+                   Contact Us
+                 </Button> */}
+                </div>
+                {/* Two */}
+                <div className="= text-center f-email content-box">
+                  <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                    Agentic AI
+                  </h2>
+                  <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
+                    Helping the business world figure out and implement AI
+                    agents to reduce costs and remove errors.
+                  </p>
+
+                  <div className="text-left w-full px-4 md:px-0 my-[10px]">
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      Agents & Automations
+                    </h2>
+                    <ul className="space-y-4 mb-[12px]">
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Vertical agents fine-tuned to specific domains and
+                          workflows.
+                        </p>
+                      </li>
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Strict compliance with regulations like HIPAA & GDPR.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      LLM Quality Gap
+                    </h2>
+                    <ul className="space-y-4 mb-12">
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Evaluation and improvement of the quality of LLM
+                          applications.
+                        </p>
+                      </li>
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Usage of LLM Sanity Framework we have developed
+                          in-house.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* <Button className="cta-button mt-8">
+                   Contact Us
+                 </Button> */}
+                </div>
+                {/* Second */}
+                <div className="= text-center f-email content-box">
+                  <h1 className="text-2xl md:text-3xl font-bold my-[20px]">
+                    Agentic AI
+                  </h1>
+                  <p className="text-lg md:text-xl text-zinc-400 mb-[12px]">
+                    Helping the business world figure out and implement AI
+                    agents to reduce costs and remove errors.
+                  </p>
+
+                  <div className="text-left w-full px-4 md:px-0 my-[10px]">
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      Agents & Automations
+                    </h2>
+                    <ul className="space-y-4 mb-[12px]">
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Vertical agents fine-tuned to specific domains and
+                          workflows.
+                        </p>
+                      </li>
+                      <li className="flex items-start my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Strict compliance with regulations like HIPAA & GDPR.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <h2 className="text-2xl md:text-3xl font-bold my-[20px]">
+                      LLM Quality Gap
+                    </h2>
+                    <ul className="space-y-4 mb-12">
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Evaluation and improvement of the quality of LLM
+                          applications.
+                        </p>
+                      </li>
+                      <li className="flex items-start  my-[10px] gap-[8px]">
+                        <CheckCircle2 className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                        <p className="text-lg text-zinc-300">
+                          Usage of LLM Sanity Framework we have developed
+                          in-house.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* <Button className="cta-button mt-8">
+                   Contact Us
+                 </Button> */}
+                </div>
+              </div>
+            </main>
+          </div>
         </section>
 
         <div className="sec2-container">
@@ -275,8 +374,6 @@ const Section1 = () => {
             <div className="sparkle"></div>
             <div className="sparkle"></div>
           </div> */}
-
-         
 
           <div>
             <div className="sec2-box2-inner">
@@ -308,10 +405,10 @@ const Section1 = () => {
             <div className="sec2-box2-inner">
               <div className="sec2-box2-outer">
                 <p>
-                  What impressed us most was the speed of implementation.
-                  Within 2 weeks, we had a fully automated lead generation
-                  system running. The quality of leads improved dramatically,
-                  and our sales team can now focus on closing deals instead of
+                  What impressed us most was the speed of implementation. Within
+                  2 weeks, we had a fully automated lead generation system
+                  running. The quality of leads improved dramatically, and our
+                  sales team can now focus on closing deals instead of
                   prospecting.
                 </p>
                 <span>5.0 ⭐⭐⭐⭐⭐</span>
@@ -337,18 +434,20 @@ const Section1 = () => {
           <div className="section3-box-inner">
             <div className="tex-left md:text-center">
               <h2>
-                We make serious effort in finding your ICP & understanding
-                their pain points and creating a copy that fully resonates with
-                them and explains how your company is the best solution for them
-                – All Automated
+                We make serious effort in finding your ICP & understanding their
+                pain points and creating a copy that fully resonates with them
+                and explains how your company is the best solution for them –
+                All Automated
               </h2>
             </div>
 
             <div className="flex items-center gap-[16px] flex-wrap justify-center w-full">
-              <Image src="/assets/i1.jpg"
+              <Image
+                src="/assets/i1.jpg"
                 className="rounded-full object-fit"
                 alt="Abdul Samad - CEO"
-                width={85} height={85}
+                width={85}
+                height={85}
               />
               <h6 className="text-gray-400 text-[20px]">
                 <span className="text-white text-lg font-semibold">
